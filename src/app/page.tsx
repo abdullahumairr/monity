@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import PageBackground from "@/components/layout/PageBackground";
 import Hero from "./Hero";
 import WhySection from "./WhySection";
+import MonitorSection from "./MonitorSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <WhySection />
+      <MonitorSection />
       <Footer />
     </PageBackground>
   );

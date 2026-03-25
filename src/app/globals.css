@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
+
 @theme {
   --font-sans: var(--font-plus-jakarta-sans), sans-serif;
 
@@ -7,4 +9,17 @@
   --color-primary: #f29d27;
   --color-primary-light: #f8cd91;
   --color-background: #fffbf6;
+}
+
+h1 {
+  color: #1C0606;
+}
+
+h3 {
+  color: #1C0606;
+}
+
+p {
+  color: #1C0606;
+  opacity: 67%;
 }
