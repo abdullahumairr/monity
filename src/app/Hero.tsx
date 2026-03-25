@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="flex w-full mx-auto container flex-col items-center px-8 md:px-0 pt-40 text-center md:pt-48 lg:pt-52 ">
-      <h1 className="text-4xl font-bold tracking-tight text-[#1A1A1A] sm:text-5xl md:text-6xl">
+      <h1 className=" font-bold tracking-tight text-[#1A1A1A] text-4xl sm:text-5xl md:text-6xl">
         Cara Baru Mengelola
         <br />
         Uang dengan Lebih Sadar
@@ -22,7 +22,7 @@ export default function HeroSection() {
           Coba Sekarang
         </Link>
         <Link
-          href="#how-it-works"
+          href="#   monitor-section"
           className="rounded-full border border-[#E0D5C8] bg-white px-6 py-2.5 text-sm font-semibold text-[#1A1A1A] transition-colors hover:bg-[#F5EDE0]"
         >
           Lihat Cara Kerja

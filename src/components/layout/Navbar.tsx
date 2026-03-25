@@ -20,9 +20,9 @@ export default function Navbar() {
 
   const menuItems = [
     { name: "Beranda", path: "/" },
-    { name: "Tentang", path: "/tentang" },
-    { name: "Solusi", path: "/solusi" },
-    { name: "Kontak", path: "/kontak" },
+    { name: "Tentang", path: "/about" },
+    { name: "Solusi", path: "/solutions" },
+    { name: "Kontak", path: "/contact" },
   ];
 
   return (

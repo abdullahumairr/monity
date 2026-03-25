@@ -16,7 +16,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="mt-auto w-full  pt-32 md:pt-36 lg:pt-52 ">
+    <footer className="mt-auto w-full px-8 pt-32 md:pt-36 lg:pt-52 ">
       <div className="mx-auto container mb-44 flex max-w-4xl flex-col items-center text-center">
         <div className="mb-5">
           <Image
@@ -34,7 +34,7 @@ export default function Footer() {
           Finansial Anda?
         </h2>
 
-        <p className="mb-8 max-w-sm text-sm leading-relaxed text-[#6B6B6B]">
+        <p className="mb-8 max-w-xl text-lg leading-relaxed text-[#6B6B6B]">
           Lihat bagaimana Monify mentransformasi cara Anda menabung dan
           bertumbuh setiap hari.
         </p>
@@ -47,7 +47,7 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className="mx-auto container rounded-t-3xl bg-[#1A1008] px-10 py-10">
+      <div className="mx-auto container rounded-t-3xl bg-[#1C0606] px-10 py-10">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="flex flex-col justify-between gap-16 md:gap-24">
             <Image
