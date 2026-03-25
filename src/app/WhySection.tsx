@@ -23,37 +23,32 @@ export default function WhySection() {
   ];
 
   return (
-    <section className="w-full px-6 ">
-      <div className="mx-auto container text-center">
+    <section className="w-full px-8 ">
+      <div className="mx-auto container text-center pt-32 md:pt-36 lg:pt-52">
         
-        {/* ── TITLE ── */}
         <h2 className="text-4xl font-bold text-[#1C0606] sm:text-5xl md:text-6xll">
           Kenapa Pilih Monify?
         </h2>
 
-        <p className="mt-3 text-sm text-[#1C0606]/60 md:text-base">
+        <p className="mt-3 text-[#1C0606]/60 text-lg">
           Sistem yang dirancang untuk mempermudah hidup, bukan menambah beban pikiran.
         </p>
 
-        {/* ── CARDS ── */}
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
             <div
               key={i}
               className="rounded-xl bg-white/70 p-6 text-left shadow-sm backdrop-blur-sm transition hover:shadow-md"
             >
-              {/* ICON */}
               <div className="mb-4 inline-flex rounded-lg  p-2 text-[#FFA930]">
                 {item.icon}
               </div>
 
-              {/* TITLE */}
-              <h3 className="text-base font-semibold text-[#1C0606] md:text-lg">
+              <h3 className="text-lg font-semibold text-[#1C0606]">
                 {item.title}
               </h3>
 
-              {/* DESC */}
-              <p className="mt-2 text-sm text-[#1C0606]/60 leading-relaxed">
+              <p className="mt-2 text-lg text-[#1C0606]/60 leading-relaxed">
                 {item.desc}
               </p>
             </div>

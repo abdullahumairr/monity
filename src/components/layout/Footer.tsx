@@ -17,7 +17,6 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="mt-auto w-full  pt-32 md:pt-36 lg:pt-52 ">
-      {/* ── CTA Section ── */}
       <div className="mx-auto container mb-44 flex max-w-4xl flex-col items-center text-center">
         <div className="mb-5">
           <Image
@@ -48,10 +47,8 @@ export default function Footer() {
         </Link>
       </div>
 
-      {/* ── Dark Footer Box ── */}
       <div className="mx-auto container rounded-t-3xl bg-[#1A1008] px-10 py-10">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
-          {/* Left — Logo + copyright */}
           <div className="flex flex-col justify-between gap-16 md:gap-24">
             <Image
               src="/footer/white-logo.svg"
@@ -64,9 +61,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Right — Links */}
           <div className="flex gap-16 md:gap-20">
-            {/* Navigasi */}
             <div className="flex flex-col gap-3">
               <span className="mb-1 text-sm font-semibold text-white">
                 Navigasi
@@ -82,7 +77,6 @@ export default function Footer() {
               ))}
             </div>
 
-            {/* Sosial Media */}
             <div className="flex flex-col gap-3">
               <span className="mb-1 text-sm font-semibold text-white">
                 Sosial Media

@@ -43,7 +43,6 @@ const gridBg = makeGridDataUrl(GRID_COLOR, GRID_SIZE);
 export default function PageBackground({ children }: PageBackgroundProps) {
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-[#FFFBF6]">
-      {/* ── FIXED: Grid top — nempel di viewport, tidak ikut scroll ── */}
       <div
         className="pointer-events-none fixed inset-x-0 top-0 z-0 h-[55vh]"
         style={{
@@ -52,7 +51,6 @@ export default function PageBackground({ children }: PageBackgroundProps) {
           backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
         }}
       >
-        {/* Orange warm tint */}
         <div
           className="absolute inset-0"
           style={{
@@ -60,7 +58,6 @@ export default function PageBackground({ children }: PageBackgroundProps) {
               "linear-gradient(to bottom, rgba(242,157,39,0.13) 0%, rgba(248,205,145,0.06) 50%, transparent 100%)",
           }}
         />
-        {/* Fade grid ke warna bg */}
         <div
           className="absolute inset-0"
           style={{
@@ -70,7 +67,6 @@ export default function PageBackground({ children }: PageBackgroundProps) {
         />
       </div>
 
-      {/* ── FIXED: Grid bottom — nempel di viewport, tidak ikut scroll ── */}
       <div
         className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-[55vh]"
         style={{
@@ -79,7 +75,6 @@ export default function PageBackground({ children }: PageBackgroundProps) {
           backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
         }}
       >
-        {/* Orange warm tint */}
         <div
           className="absolute inset-0"
           style={{
@@ -87,7 +82,6 @@ export default function PageBackground({ children }: PageBackgroundProps) {
               "linear-gradient(to top, rgba(242,157,39,0.13) 0%, rgba(248,205,145,0.06) 50%, transparent 100%)",
           }}
         />
-        {/* Fade grid ke warna bg */}
         <div
           className="absolute inset-0"
           style={{
@@ -97,7 +91,6 @@ export default function PageBackground({ children }: PageBackgroundProps) {
         />
       </div>
 
-      {/* ── Content — di atas semua layer background ── */}
       <div className="relative z-10 flex flex-1 flex-col">{children}</div>
     </div>
   );

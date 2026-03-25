@@ -47,7 +47,7 @@ export default function Navbar() {
             >
               <Link
                 href={item.path}
-                className={`text-sm transition-colors ${
+                className={`text-lg transition-colors ${
                   isActive(item.path)
                     ? "text-black font-bold border-b-2 border-orange-400 pb-0.5"
                     : "text-gray-500 hover:text-orange-500 font-medium"
@@ -91,7 +91,7 @@ export default function Navbar() {
         >
           <Link
             href="/demo"
-            className="bg-[#FFAC33] hover:bg-[#f09615] text-white px-7 py-2.5 rounded-lg font-bold text-sm transition-all shadow-sm flex items-center justify-center"
+            className="bg-[#FFAC33] hover:bg-[#f09615] text-white px-7 py-2.5 rounded-lg font-bold text-lg transition-all shadow-sm flex items-center justify-center"
           >
             Demo
           </Link>
