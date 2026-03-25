@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FiCheckCircle } from "react-icons/fi";
+import { CgEditBlackPoint } from "react-icons/cg";
 
 export default function MonitorSection() {
   const features = [
@@ -63,7 +63,7 @@ export default function MonitorSection() {
               <li key={i} className="flex items-start gap-3">
                 {/* ICON */}
                 <span className="mt-1 text-[#FFA930]">
-                  <FiCheckCircle size={18} />
+                  <CgEditBlackPoint size={18} />
                 </span>
 
                 {/* TEXT */}
