@@ -24,7 +24,7 @@ export default function OptimizeSection() {
   ];
 
   return (
-    <section className="w-full px-8 pt-32 md:pt-36 lg:pt-52">
+    <section className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
       <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
         <div className="order-2 md:order-1">
           <h2 className="text-4xl font-bold text-[#1C0606]sm:text-5xl md:text-6xl">

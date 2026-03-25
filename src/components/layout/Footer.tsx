@@ -16,8 +16,8 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="mt-auto w-full px-8 pt-32 md:pt-36 lg:pt-52 ">
-      <div className="mx-auto container mb-44 flex max-w-4xl flex-col items-center text-center">
+    <footer className="mt-auto w-full px-8 pt-32 md:pt-36 lg:pt-40">
+      <div className="mx-auto container mb-32 md:mb-36 lg:mb-40 flex max-w-4xl flex-col items-center text-center">
         <div className="mb-5">
           <Image
             src="/footer/yellow-logo.svg"

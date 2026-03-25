@@ -24,7 +24,7 @@ export default function MonitorSection() {
   ];
 
   return (
-    <section id="monitor-section" className="w-full px-8 pt-32 md:pt-36 lg:pt-52 ">
+    <section id="monitor-section" className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
       <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
         <div className="relative flex justify-center">
           <div

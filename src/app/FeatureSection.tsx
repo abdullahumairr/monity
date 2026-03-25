@@ -7,7 +7,7 @@ import { TbTipJar } from "react-icons/tb";
 
 export default function FeatureSection() {
   return (
-    <section className="w-full px-8 pt-32 md:pt-36 lg:pt-52">
+    <section className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
       <div className="mx-auto container">
         <div className="text-center">
           <h1 className="text-4xl font-bold  sm:text-5xl md:text-6xl">

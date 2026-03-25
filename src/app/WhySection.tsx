@@ -24,7 +24,7 @@ export default function WhySection() {
 
   return (
     <section className="w-full px-8 ">
-      <div className="mx-auto container text-center pt-32 md:pt-36 lg:pt-52">
+      <div className="mx-auto container text-center pt-32 md:pt-36 lg:pt-40">
         
         <h2 className="text-4xl font-bold text-[#1C0606] sm:text-5xl md:text-6xll">
           Kenapa Pilih Monify?

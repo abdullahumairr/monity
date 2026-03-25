@@ -17,7 +17,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="w-full px-6 py-12 md:py-16">
+    <section className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
       <div className="mx-auto max-w-7xl">
         
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
@@ -33,7 +33,7 @@ export default function StatsSection() {
                 shadow-sm
               "
             >
-              <h1 className=" font-semibold  text-2xl md:text-[32px]">
+              <h1 className=" font-bold  text-2xl md:text-[32px]">
                 {item.value}
               </h1>
               <p className="mt-1 text-lg">

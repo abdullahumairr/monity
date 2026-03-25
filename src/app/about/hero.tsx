@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeroAbout() {
   return (
-    <section className="w-full px-8 md:px-0 pt-40  md:pt-48 lg:pt-52 ">
+    <section className="w-full px-8 pt-40  md:pt-48 lg:pt-52 ">
       <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
         <div>
           <h1 className=" font-bold leading-tight text-4xl sm:text-5xl md:text-6xl">
