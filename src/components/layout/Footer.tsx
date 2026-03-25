@@ -16,9 +16,9 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="mt-auto w-full px-4 ">
+    <footer className="mt-auto w-full  pt-32 md:pt-36 lg:pt-52 ">
       {/* ── CTA Section ── */}
-      <div className="mx-auto container mb-12 flex max-w-4xl flex-col items-center text-center">
+      <div className="mx-auto container mb-44 flex max-w-4xl flex-col items-center text-center">
         <div className="mb-5">
           <Image
             src="/footer/yellow-logo.svg"
@@ -29,7 +29,7 @@ export default function Footer() {
           />
         </div>
 
-        <h2 className="mb-4 text-4xl font-bold tracking-tight text-[#1A1A1A] md:text-5xl">
+        <h2 className="mb-4 text-4xl font-bold tracking-tight text-[#1A1A1A]  sm:text-5xl md:text-6xl">
           Siap Pegang Kendali
           <br />
           Finansial Anda?
@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
 
       {/* ── Dark Footer Box ── */}
-      <div className="mx-auto container rounded-2xl bg-[#1A1008] px-10 py-10">
+      <div className="mx-auto container rounded-t-3xl bg-[#1A1008] px-10 py-10">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           {/* Left — Logo + copyright */}
           <div className="flex flex-col justify-between gap-16 md:gap-24">

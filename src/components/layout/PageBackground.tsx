@@ -3,7 +3,7 @@ interface PageBackgroundProps {
 }
 
 const GRID_COLOR = "#ffffff";
-const GRID_SIZE = 10;
+const GRID_SIZE = 130;
 
 function makeGridDataUrl(color: string, size: number) {
   const svg = `
@@ -42,86 +42,62 @@ const gridBg = makeGridDataUrl(GRID_COLOR, GRID_SIZE);
 
 export default function PageBackground({ children }: PageBackgroundProps) {
   return (
-    <div
-      className="relative flex min-h-screen w-full flex-col overflow-x-hidden"
-      style={{
-        background: `
-          radial-gradient(ellipse at top, rgba(242,157,39,0.10), transparent 60%),
-          radial-gradient(ellipse at bottom, rgba(242,157,39,0.10), transparent 60%),
-          linear-gradient(to bottom, 
-            rgba(248,205,145,0.05) 0%, 
-            #FFFBF6 35%, 
-            #FFFBF6 65%, 
-            rgba(248,205,145,0.05) 100%
-          )
-        `,
-      }}
-    >
-      {/* ── TOP: grid + orange gradient fade ── */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[560px]">
-        {/* Grid */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: gridBg,
-            backgroundRepeat: "repeat",
-            backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
-            opacity: 0.9, // biar lebih nyatu
-          }}
-        />
-
-        {/* Warm overlay (lebih soft & smooth) */}
+    <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-[#FFFBF6]">
+      {/* ── FIXED: Grid top — nempel di viewport, tidak ikut scroll ── */}
+      <div
+        className="pointer-events-none fixed inset-x-0 top-0 z-0 h-[55vh]"
+        style={{
+          backgroundImage: gridBg,
+          backgroundRepeat: "repeat",
+          backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
+        }}
+      >
+        {/* Orange warm tint */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(242,157,39,0.12) 0%, rgba(248,205,145,0.06) 45%, transparent 100%)",
+              "linear-gradient(to bottom, rgba(242,157,39,0.13) 0%, rgba(248,205,145,0.06) 50%, transparent 100%)",
           }}
         />
-
-        {/* Fade ke background */}
+        {/* Fade grid ke warna bg */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, transparent 25%, #FFFBF6 100%)",
+              "linear-gradient(to bottom, transparent 20%, #FFFBF6 100%)",
           }}
         />
       </div>
 
-      {/* ── BOTTOM: grid + orange gradient fade ── */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[560px]">
-        {/* Grid */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: gridBg,
-            backgroundRepeat: "repeat",
-            backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
-            opacity: 0.9,
-          }}
-        />
-
-        {/* Warm overlay */}
+      {/* ── FIXED: Grid bottom — nempel di viewport, tidak ikut scroll ── */}
+      <div
+        className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-[55vh]"
+        style={{
+          backgroundImage: gridBg,
+          backgroundRepeat: "repeat",
+          backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
+        }}
+      >
+        {/* Orange warm tint */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to top, rgba(242,157,39,0.12) 0%, rgba(248,205,145,0.06) 45%, transparent 100%)",
+              "linear-gradient(to top, rgba(242,157,39,0.13) 0%, rgba(248,205,145,0.06) 50%, transparent 100%)",
           }}
         />
-
-        {/* Fade ke background */}
+        {/* Fade grid ke warna bg */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to top, transparent 25%, #FFFBF6 100%)",
+              "linear-gradient(to top, transparent 20%, #FFFBF6 100%)",
           }}
         />
       </div>
 
-      {/* ── Content ── */}
+      {/* ── Content — di atas semua layer background ── */}
       <div className="relative z-10 flex flex-1 flex-col">{children}</div>
     </div>
   );
