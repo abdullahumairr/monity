@@ -1,0 +1,128 @@
+interface PageBackgroundProps {
+  children: React.ReactNode;
+}
+
+const GRID_COLOR = "#ffffff";
+const GRID_SIZE = 10;
+
+function makeGridDataUrl(color: string, size: number) {
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}">
+      <defs>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="1.2" result="blur"/>
+          
+          <feComponentTransfer>
+            <feFuncR type="linear" slope="1.4"/>
+            <feFuncG type="linear" slope="1.4"/>
+            <feFuncB type="linear" slope="1.4"/>
+          </feComponentTransfer>
+
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+
+      <path 
+        d="M ${size} 0 L 0 0 0 ${size}" 
+        fill="none" 
+        stroke="${color}" 
+        stroke-width="10"
+        filter="url(#glow)"
+      />
+    </svg>
+  `.trim();
+
+  return `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
+}
+
+const gridBg = makeGridDataUrl(GRID_COLOR, GRID_SIZE);
+
+export default function PageBackground({ children }: PageBackgroundProps) {
+  return (
+    <div
+      className="relative flex min-h-screen w-full flex-col overflow-x-hidden"
+      style={{
+        background: `
+          radial-gradient(ellipse at top, rgba(242,157,39,0.10), transparent 60%),
+          radial-gradient(ellipse at bottom, rgba(242,157,39,0.10), transparent 60%),
+          linear-gradient(to bottom, 
+            rgba(248,205,145,0.05) 0%, 
+            #FFFBF6 35%, 
+            #FFFBF6 65%, 
+            rgba(248,205,145,0.05) 100%
+          )
+        `,
+      }}
+    >
+      {/* ── TOP: grid + orange gradient fade ── */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[560px]">
+        {/* Grid */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: gridBg,
+            backgroundRepeat: "repeat",
+            backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
+            opacity: 0.9, // biar lebih nyatu
+          }}
+        />
+
+        {/* Warm overlay (lebih soft & smooth) */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(242,157,39,0.12) 0%, rgba(248,205,145,0.06) 45%, transparent 100%)",
+          }}
+        />
+
+        {/* Fade ke background */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, transparent 25%, #FFFBF6 100%)",
+          }}
+        />
+      </div>
+
+      {/* ── BOTTOM: grid + orange gradient fade ── */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[560px]">
+        {/* Grid */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: gridBg,
+            backgroundRepeat: "repeat",
+            backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
+            opacity: 0.9,
+          }}
+        />
+
+        {/* Warm overlay */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to top, rgba(242,157,39,0.12) 0%, rgba(248,205,145,0.06) 45%, transparent 100%)",
+          }}
+        />
+
+        {/* Fade ke background */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to top, transparent 25%, #FFFBF6 100%)",
+          }}
+        />
+      </div>
+
+      {/* ── Content ── */}
+      <div className="relative z-10 flex flex-1 flex-col">{children}</div>
+    </div>
+  );
+}
