@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-redeviation-bs-uid="8s1x864i9em">
+    <html lang="en" data-redeviation-bs-uid="npdp6hgiia">
       <body className={`${plusJakartaSans.className} antialiased`}>
         {children}
       </body>

@@ -6,6 +6,7 @@ import SolutionVisualizationSection from "./SolutionVisualizationSection";
 import SolutionsHero from "./hero";
 import SolutionForecastSection from "./SolutionForecastSection";
 import PrinciplesSection from "./PrinciplesSection";
+import ReadyFooter from "@/components/layout/ReadyFooter";
 
 export default function SolutionsPage() {
   return (
@@ -16,6 +17,7 @@ export default function SolutionsPage() {
       <SolutionVisualizationSection />
       <SolutionForecastSection />
       <PrinciplesSection />
+      <ReadyFooter />
       <Footer />
     </PageBackground>
   );

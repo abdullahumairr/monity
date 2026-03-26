@@ -7,6 +7,7 @@ import WhySection from "./WhySection";
 import MonitorSection from "./MonitorSection";
 import OptimizeSection from "./OptimizeSection";
 import FeatureSection from "./FeatureSection";
+import ReadyFooter from "@/components/layout/ReadyFooter";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <MonitorSection />
       <OptimizeSection />
       <FeatureSection />
+      <ReadyFooter />
       <Footer />
     </PageBackground>
   );

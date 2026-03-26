@@ -6,6 +6,7 @@ import StatsSection from "./StatsSection";
 import AboutStorySection from "./AboutStorySection";
 import AboutFutureSection from "./AboutFutureSection";
 import AboutDemocracySection from "./AboutDemocracySection";
+import ReadyFooter from "@/components/layout/ReadyFooter";
 
 export default function AboutPage() {
   return (
@@ -16,6 +17,7 @@ export default function AboutPage() {
       <AboutStorySection />
       <AboutFutureSection />  
       <AboutDemocracySection />
+      <ReadyFooter />
       <Footer />
     </PageBackground>
   );
