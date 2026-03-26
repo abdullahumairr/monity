@@ -2,39 +2,14 @@ interface PageBackgroundProps {
   children: React.ReactNode;
 }
 
-const GRID_COLOR = "#ffffff";
 const GRID_SIZE = 130;
+const GRID_ROWS = 8;
+const GRID_HEIGHT = GRID_SIZE * GRID_ROWS; 
+
+const GRID_COLOR = "rgba(255, 255, 255, 1)";
 
 function makeGridDataUrl(color: string, size: number) {
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}">
-      <defs>
-        <filter id="glow">
-          <feGaussianBlur stdDeviation="1.2" result="blur"/>
-          
-          <feComponentTransfer>
-            <feFuncR type="linear" slope="1.4"/>
-            <feFuncG type="linear" slope="1.4"/>
-            <feFuncB type="linear" slope="1.4"/>
-          </feComponentTransfer>
-
-          <feMerge>
-            <feMergeNode in="blur"/>
-            <feMergeNode in="SourceGraphic"/>
-          </feMerge>
-        </filter>
-      </defs>
-
-      <path 
-        d="M ${size} 0 L 0 0 0 ${size}" 
-        fill="none" 
-        stroke="${color}" 
-        stroke-width="10"
-        filter="url(#glow)"
-      />
-    </svg>
-  `.trim();
-
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}"><path d="M ${size} 0 L 0 0 0 ${size}" fill="none" stroke="${color}" stroke-width="12"/></svg>`;
   return `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
 }
 
@@ -42,56 +17,75 @@ const gridBg = makeGridDataUrl(GRID_COLOR, GRID_SIZE);
 
 export default function PageBackground({ children }: PageBackgroundProps) {
   return (
-    <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-[#FFFBF6]">
-      <div
-        className="pointer-events-none fixed inset-x-0 top-0 z-0 h-[55vh]"
-        style={{
-          backgroundImage: gridBg,
-          backgroundRepeat: "repeat",
-          backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
-        }}
-      >
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(242,157,39,0.13) 0%, rgba(248,205,145,0.06) 50%, transparent 100%)",
-          }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to bottom, transparent 20%, #FFFBF6 100%)",
-          }}
-        />
-      </div>
+    <>
+      <div className="fixed inset-0 -z-20 bg-[#FFFBF6]" />
 
-      <div
-        className="pointer-events-none fixed inset-x-0 bottom-0 z-0 h-[55vh]"
-        style={{
-          backgroundImage: gridBg,
-          backgroundRepeat: "repeat",
-          backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
-        }}
-      >
+      {/* Scrollable page */}
+      <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to top, rgba(242,157,39,0.13) 0%, rgba(248,205,145,0.06) 50%, transparent 100%)",
-          }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to top, transparent 20%, #FFFBF6 100%)",
-          }}
-        />
-      </div>
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10"
+          style={{ height: GRID_HEIGHT }}
+        >
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: gridBg,
+              backgroundRepeat: "repeat",
+              backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
+            }}
+          />
 
-      <div className="relative z-10 flex flex-1 flex-col">{children}</div>
-    </div>
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(242,157,39,0.14) 0%, rgba(248,205,145,0.07) 40%, transparent 100%)",
+            }}
+          />
+
+          <div
+            className="absolute inset-x-0 bottom-0"
+            style={{
+              height: GRID_HEIGHT,
+              background:
+                "linear-gradient(to bottom, transparent 35%, #FFFBF6 70%)",
+            }}
+          />
+        </div>
+
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 -z-10"
+          style={{ height: GRID_HEIGHT }}
+        >
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: gridBg,
+              backgroundRepeat: "repeat",
+              backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
+            }}
+          />
+
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to top, rgba(242,157,39,0.14) 0%, rgba(248,205,145,0.07) 40%, transparent 100%)",
+            }}
+          />
+
+          <div
+            className="absolute inset-x-0 top-0"
+            style={{
+              height: GRID_HEIGHT,
+              background:
+                "linear-gradient(to top, transparent 35%, #FFFBF6 70%)",
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 flex flex-1 flex-col">{children}</div>
+      </div>
+    </>
   );
 }
