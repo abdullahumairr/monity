@@ -5,6 +5,7 @@ import HeroAbout from "./hero";
 import StatsSection from "./StatsSection";
 import AboutStorySection from "./AboutStorySection";
 import AboutFutureSection from "./AboutFutureSection";
+import AboutDemocracySection from "./AboutDemocracySection";
 
 export default function AboutPage() {
   return (
@@ -14,6 +15,7 @@ export default function AboutPage() {
       <StatsSection />
       <AboutStorySection />
       <AboutFutureSection />  
+      <AboutDemocracySection />
       <Footer />
     </PageBackground>
   );

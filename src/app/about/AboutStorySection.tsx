@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutStorySection() {
   return (
-    <section className="w-full px-8 pt-40  md:pt-48 lg:pt-52 ">
+    <section className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
       <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
         <div className="order-1 flex justify-center md:justify-start">
           <div

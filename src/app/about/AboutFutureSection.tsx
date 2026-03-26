@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function AboutFutureSection() {
   return (
-    <section className="w-full px-6 py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
+    <section className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
+      <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
         <div className="order-1 md:order-2 flex justify-center md:justify-end">
           <div
             className="
@@ -20,25 +20,24 @@ export default function AboutFutureSection() {
           >
             <div className="absolute inset-0 flex items-center justify-center">
               <Image
-                src="/about/3.png"
+                src="/about/3.svg"
                 alt="future vision"
                 width={420}
                 height={320}
-                className="w-full max-w-80 md:max-w-lg h-auto object-contain"
+                className="w-full max-w-48 md:max-w-72 lg:max-w-sm h-auto object-contain"
               />
             </div>
           </div>
         </div>
 
-        {/* ── TEXT ── */}
         <div className="order-2 md:order-1">
-          <h2 className="text-2xl font-semibold text-[#1C0606] md:text-4xl leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1C0606] leading-tight">
             Masa Depan
             <br />
             Finansial Mandiri
-          </h2>
+          </h1>
 
-          <p className="mt-4 text-sm text-[#1C0606]/60 md:text-base max-w-md leading-relaxed">
+          <p className="mt-4 text-sm text-[#1C0606]/60 md:text-base  leading-relaxed">
             Kami berdedikasi penuh untuk membangun sebuah ekosistem digital yang
             memungkinkan setiap individu memiliki kendali mutlak atas keuangan
             mereka. Fokus kami adalah menghadirkan kecerdasan finansial melalui
@@ -46,7 +45,6 @@ export default function AboutFutureSection() {
             masa depan dengan percaya diri.
           </p>
         </div>
-
       </div>
     </section>
   );
