@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 
-export default function SolutionAutomationSection() {
+export default function SolutionVisualizationSection() {
   return (
     <section className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
       <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
-        <div className="order-1 md:order-2 flex justify-center md:justify-end">
+        <div className="order-1 flex justify-center md:justify-start">
           <div
             className="
-             relative
+              relative
               w-full max-w-185
               aspect-740/481
               md:h-110.25 md:aspect-auto
@@ -20,28 +20,27 @@ export default function SolutionAutomationSection() {
           >
             <div className="absolute inset-0 flex items-center justify-center">
               <Image
-                src="/solutions/2.svg"
-                alt="automation"
+                src="/solutions/3.svg"
+                alt="visualization"
                 width={320}
                 height={240}
-                className="w-full max-w-96 md:max-w-xs lg:max-w-lg h-auto object-contain"
+                className="w-full max-w-full h-auto object-contain"
               />
             </div>
           </div>
         </div>
 
-        <div className="order-2 md:order-1">
+        <div className="order-2">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-            Automasi Finansial
+            Visualisasi Data
             <br />
-            Tanpa Batas
+            Paling Intuitif
           </h2>
 
-          <p className="mt-4 text-lg  leading-relaxed">
-            Lupakan pencatatan manual yang melelahkan. Monity menghubungkan
-            seluruh aset Anda secara real-time, memastikan setiap transaksi
-            tercatat dengan presisi standar perbankan tanpa satu pun yang
-            terlewat.
+          <p className="mt-4 text-lg leading-relaxed">
+            Kami mengubah angka-angka rumit menjadi narasi visual yang mudah
+            dipahami. Lihat ke mana uang Anda pergi melalui grafik interaktif
+            yang membantu Anda mengambil keputusan lebih bijak setiap hari.
           </p>
         </div>
       </div>
