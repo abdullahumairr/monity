@@ -27,7 +27,7 @@ export default function ReadyFooter() {
         </p>
 
         <Link
-          href="/demo"
+          href="/error"
           className="rounded-full bg-[#F29D27] px-7 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
         >
           Coba Sekarang

@@ -90,7 +90,7 @@ export default function Navbar() {
           whileTap={{ scale: 0.95 }}
         >
           <Link
-            href="/demo"
+            href="/error"
             className="bg-[#FFAC33] hover:bg-[#f09615] text-white px-7 py-2.5 rounded-lg font-bold text-lg transition-all shadow-sm flex items-center justify-center"
           >
             Demo

@@ -16,13 +16,13 @@ export default function HeroSection() {
 
       <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
         <Link
-          href="/demo"
+          href="/error"
           className="rounded-full bg-[#F29D27] px-6 py-2.5 text-lg font-semibold text-white transition-opacity hover:opacity-90"
         >
           Coba Sekarang
         </Link>
         <Link
-          href="#   monitor-section"
+          href="#monitor-section"
           className="rounded-full border border-[#E0D5C8] bg-white px-6 py-2.5 text-lg font-semibold text-[#1A1A1A] transition-colors hover:bg-[#F5EDE0]"
         >
           Lihat Cara Kerja
