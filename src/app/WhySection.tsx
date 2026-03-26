@@ -44,7 +44,7 @@ export default function WhySection() {
                 {item.icon}
               </div>
 
-              <h3 className="text-[32px] font-semibold text-[#1C0606]">
+              <h3 className="text-2xl md:text-[32px] font-semibold text-[#1C0606]">
                 {item.title}
               </h3>
 

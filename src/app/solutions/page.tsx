@@ -5,6 +5,7 @@ import SolutionAutomationSection from "./SolutionAutomationSection";
 import SolutionVisualizationSection from "./SolutionVisualizationSection";
 import SolutionsHero from "./hero";
 import SolutionForecastSection from "./SolutionForecastSection";
+import PrinciplesSection from "./PrinciplesSection";
 
 export default function SolutionsPage() {
   return (
@@ -14,6 +15,7 @@ export default function SolutionsPage() {
       <SolutionAutomationSection />
       <SolutionVisualizationSection />
       <SolutionForecastSection />
+      <PrinciplesSection />
       <Footer />
     </PageBackground>
   );
