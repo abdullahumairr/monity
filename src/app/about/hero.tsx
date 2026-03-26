@@ -13,7 +13,7 @@ export default function HeroAbout() {
             Finansial yang Kokoh
           </h1>
 
-          <p className="text-sm md:text-base max-w-md ">
+          <p className="text-lg   ">
             Monity hadir untuk mendefinisikan ulang cara Anda melihat,
             mengelola, dan menumbuhkan aset setiap hari.
           </p>

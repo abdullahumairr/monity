@@ -31,18 +31,19 @@ export default function AboutFutureSection() {
         </div>
 
         <div className="order-2 md:order-1">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1C0606] leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
             Masa Depan
             <br />
             Finansial Mandiri
           </h1>
 
-          <p className="mt-4 text-sm text-[#1C0606]/60 md:text-base  leading-relaxed">
+          <p className="mt-4 text-lg leading-relaxed">
             Kami berdedikasi penuh untuk membangun sebuah ekosistem digital yang
-            memungkinkan setiap individu memiliki kendali mutlak atas keuangan
-            mereka. Fokus kami adalah menghadirkan kecerdasan finansial melalui
-            transparansi data yang mendalam, sehingga Anda dapat merencanakan
-            masa depan dengan percaya diri.
+            memungkinkan setiap individu memiliki kendali mutlak atas
+            kesejahteraan mereka. Fokus kami adalah menghilangkan kecemasan
+            finansial melalui transparansi data yang mendalam, sehingga Anda
+            dapat merencanakan masa depan dengan rasa aman dan penuh percaya
+            diri.
           </p>
         </div>
       </div>

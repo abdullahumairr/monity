@@ -37,10 +37,11 @@ export default function AboutStorySection() {
             akan Kejelasan
           </h1>
 
-          <p className="mt-4 text-lhg text-[#1C0606]/60  leading-relaxed">
-            Kami percaya bahwa setiap keputusan finansial dimulai dari pemahaman
-            yang baik. Monify diciptakan untuk menyederhanakan kompleksitas dan
-            memberikan transparansi penuh atas setiap arus uang Anda.
+          <p className="mt-4 text-lg leading-relaxed">
+            Kami percaya bahwa setiap rupiah memiliki cerita. Monity diciptakan
+            untuk menghilangkan kebingungan finansial dan memberikan
+            transparansi penuh atas setiap keputusan yang Anda ambil demi masa
+            depan.
           </p>
         </div>
       </div>

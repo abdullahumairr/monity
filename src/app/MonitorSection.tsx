@@ -52,7 +52,7 @@ export default function MonitorSection() {
             Hubungkan & Pantau
           </h1>
 
-          <p className="mt-3 text-lg text-zinc-400 ">
+          <p className="mt-3 text-lg">
             Mulailah perjalanan finansial Anda dengan mengintegrasikan seluruh
             sumber pendapatan ke dalam satu ekosistem digital yang aman.
           </p>

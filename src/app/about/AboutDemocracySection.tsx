@@ -6,7 +6,6 @@ export default function AboutDemocracySection() {
   return (
     <section className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
       <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
-        
         <div className="order-1 flex justify-center md:justify-start">
           <div
             className="
@@ -32,21 +31,21 @@ export default function AboutDemocracySection() {
         </div>
 
         <div className="order-2">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1C0606]  leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
             Demokratisasi
             <br />
             Manajemen Aset Digital
           </h1>
 
-          <p className="mt-4 text-sm text-[#1C0606]/60 md:text-base leading-relaxed">
-            Melalui penggabungan teknologi cerdas dan desain yang inklusif, misi kami
-            adalah menyediakan alat manajemen keuangan tercanggih yang dapat diakses
-            oleh siapa saja. Kami berkomitmen untuk menyederhanakan proses menabung,
-            memantau pengeluaran, hingga berinvestasi agar menjadi aktivitas harian
-            yang menyenangkan dan memberdayakan.
+          <p className="mt-4 text-lg leading-relaxed">
+            Melalui penggabungan teknologi cerdas dan desain yang inklusif, misi
+            kami adalah menyediakan alat manajemen keuangan tercanggih yang
+            dapat diakses oleh siapa saja. Kami berkomitmen untuk
+            menyederhanakan proses menabung, memantau pengeluaran, hingga
+            berinvestasi agar menjadi aktivitas harian yang menyenangkan dan
+            memberdayakan.
           </p>
         </div>
-
       </div>
     </section>
   );

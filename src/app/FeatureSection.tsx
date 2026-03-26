@@ -33,7 +33,7 @@ export default function FeatureSection() {
             </div>
 
             <div className="p-5">
-              <h3 className="mt-4 text-2xl md:text-[32px] font-semibold ">
+              <h3 className="mt-4 text-[32px] font-semibold ">
                 Multi-Account Tracking
               </h3>
               <p className="text-lg ">
@@ -68,7 +68,7 @@ export default function FeatureSection() {
             </div>
             <div className="p-5">
               {" "}
-              <h3 className="mt-4 text-2xl md:text-[32px] font-semibold ">Custom Tags</h3>
+              <h3 className="mt-4 text-[32px] font-semibold ">Custom Tags</h3>
               <p className="text-lg ">
                 Kelola pengeluaran spesifik dengan label yang personal.
               </p>
@@ -80,9 +80,9 @@ export default function FeatureSection() {
           {/* CARD 1 */}
           <div className="rounded-xl bg-white/70 p-5 shadow-sm backdrop-blur-sm">
             <div className="mb-3 text-[#FFA930]">
-              <PiHandDeposit size={42} />
+              <PiHandDeposit size={40} />
             </div>
-            <h4 className="font-semibold text-2xl md:text-[32px]">Export Reports</h4>
+            <h4 className="font-semibold text-[32px]">Export Reports</h4>
             <p className="text-lg ">
               Unduh laporan ke dalam bentuk PDF atau CSV secara instan.
             </p>
@@ -91,9 +91,9 @@ export default function FeatureSection() {
           {/* CARD 2 */}
           <div className="rounded-xl bg-white/70 p-5 shadow-sm backdrop-blur-sm">
             <div className="mb-3 text-[#FFA930]">
-              <GoShieldCheck size={42} />
+              <GoShieldCheck size={40} />
             </div>
-            <h4 className="font-semibold text-2xl md:text-[32px]">AES-256 Security</h4>
+            <h4 className="font-semibold text-[32px]">AES-256 Security</h4>
             <p className="text-lg ">
               Proteksi data finansial dengan enkripsi standar bank.
             </p>
@@ -102,9 +102,9 @@ export default function FeatureSection() {
           {/* CARD 3 */}
           <div className="rounded-xl bg-white/70 p-5 shadow-sm backdrop-blur-sm">
             <div className="mb-3 text-[#FFA930]">
-              <TbTipJar size={42} />
+              <TbTipJar size={40} />
             </div>
-            <h4 className="font-semibold text-2xl md:text-[32px]">Target Savings</h4>
+            <h4 className="font-semibold text-[32px]">Target Savings</h4>
             <p className="text-lg ">
               Wujudkan mimpi Anda dengan sistem tabungan otomatis.
             </p>

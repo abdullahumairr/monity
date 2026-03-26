@@ -6,17 +6,17 @@ import { FaCrosshairs } from "react-icons/fa";
 export default function WhySection() {
   const items = [
     {
-      icon: <FaCrosshairs size={32} />,
+      icon: <FaCrosshairs size={40} />,
       title: "Presisi Tanpa Ribet",
       desc: "membantu mengategorikan transaksi Anda secara instan dan akurat.",
     },
     {
-      icon: <PiHandEye size={32} />,
+      icon: <PiHandEye size={40} />,
       title: "Transparansi Total",
       desc: "Lihat ke mana setiap sen mengalir. Tidak ada lagi 'biaya siluman' atau langganan terlupakan",
     },
     {
-      icon: <PiStrategy size={32} />,
+      icon: <PiStrategy size={40} />,
       title: "Strategi Pertumbuhan",
       desc: "Dapatkan rekomendasi cerdas untuk alih pengeluaran impulsif jadi tabungan produktif.",
     },
@@ -26,11 +26,11 @@ export default function WhySection() {
     <section className="w-full px-8 ">
       <div className="mx-auto container text-center pt-32 md:pt-36 lg:pt-40">
         
-        <h1 className="text-4xl font-bold text-[#1C0606] sm:text-5xl md:text-6xll">
+        <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">
           Kenapa Pilih Monify?
         </h1>
 
-        <p className="mt-3 text-[#1C0606]/60 text-lg">
+        <p className="mt-3 text-lg">
           Sistem yang dirancang untuk mempermudah hidup, bukan menambah beban pikiran.
         </p>
 
@@ -44,11 +44,11 @@ export default function WhySection() {
                 {item.icon}
               </div>
 
-              <h3 className="text-lg font-semibold text-[#1C0606]">
+              <h3 className="text-[32px] font-semibold text-[#1C0606]">
                 {item.title}
               </h3>
 
-              <p className="mt-2 text-lg text-[#1C0606]/60 leading-relaxed">
+              <p className="mt-2 text-lg leading-relaxed">
                 {item.desc}
               </p>
             </div>

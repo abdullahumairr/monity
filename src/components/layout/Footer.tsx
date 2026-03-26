@@ -1,18 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const navLinks = [
-  { label: "Beranda", href: "/" },
-  { label: "Tentang", href: "/about" },
-  { label: "Solusi", href: "/solutions" },
-  { label: "Kontak", href: "/contact" },
-];
-
-const socialLinks = [
-  { label: "YouTube", href: "https://youtube.com" },
-  { label: "Facebook", href: "https://facebook.com" },
-  { label: "Instagram", href: "https://instagram.com" },
-];
+import React from "react";
 
 export default function Footer() {
   return (
@@ -47,65 +35,60 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className="mx-auto container rounded-t-3xl bg-[#1C0606] px-10 py-10">
-        <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
-          <div className="flex flex-col justify-between gap-16 md:gap-24">
+      <div className="mx-auto container rounded-t-3xl bg-[#1C0606] px-10 py-10   flex flex-col md:flex-row justify-between relative ">
+        <div className="flex flex-col justify-between h-full space-y-12 md:space-y-0">
+          <div className="flex items-center gap-2">
             <Image
               src="/footer/white-logo.svg"
-              alt="Monify"
+              alt="Monity Logo"
               width={120}
-              height={32}
+              height={40}
             />
-            <p className="text-xs text-[#6B5E4E]">
-              © 2026 Monify. All rights reserved.
-            </p>
           </div>
+          <p className="text-white text-sm font-light">
+            © 2026 Monity. All rights reserved.
+          </p>
+        </div>
 
-          <div className="flex gap-16 md:gap-20">
-            <div className="flex flex-col gap-3">
-              <span className="mb-1 text-sm font-semibold text-white">
-                Navigasi
-              </span>
-              {navLinks.map((link) => (
+        <div className="flex flex-wrap gap-12 md:gap-20 mt-10 md:mt-0">
+          <div className="flex flex-col gap-4">
+            <h4 className="text-white font-bold text-sm">Navigasi</h4>
+            <div className="flex flex-col gap-2">
+              {["Beranda", "Tentang", "Solusi", "Kontak"].map((item) => (
                 <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm text-[#9E8C78] transition-colors hover:text-white"
+                  key={item}
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  {link.label}
+                  {item}
                 </Link>
               ))}
             </div>
+          </div>
 
-            <div className="flex flex-col gap-3">
-              <span className="mb-1 text-sm font-semibold text-white">
-                Sosial Media
-              </span>
-              {socialLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[#9E8C78] transition-colors hover:text-white"
+          <div className="flex flex-col gap-4">
+            <h4 className="text-white font-bold text-sm">Sosial Media</h4>
+            <div className="flex flex-col gap-2">
+              {["YouTube", "Facebook", "Instagram"].map((item) => (
+                <Link
+                  key={item}
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  {link.label}
-                </a>
+                  {item}
+                </Link>
               ))}
             </div>
+          </div>
 
-            {/* Demo */}
-            <div className="flex flex-col gap-3">
-              <span className="mb-1 text-sm font-semibold text-white">
-                Demo
-              </span>
-              <Link
-                href="/demo"
-                className="rounded-lg border border-[#3A2E22] bg-[#2A1F14] px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-[#3A2E22]"
-              >
-                Coba Sekarang
-              </Link>
-            </div>
+          <div className="flex flex-col gap-4">
+            <h4 className="text-white font-bold text-sm">Demo</h4>
+            <Link
+              href="/demo"
+              className="bg-white text-black px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-gray-200 transition-all text-center"
+            >
+              Coba Sekarang
+            </Link>
           </div>
         </div>
       </div>

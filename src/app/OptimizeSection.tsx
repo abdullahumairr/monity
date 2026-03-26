@@ -31,7 +31,7 @@ export default function OptimizeSection() {
             Kelola & Optimalkan
           </h1>
 
-          <p className="mt-3 text-lg text-[#1C0606]/60 ">
+          <p className="mt-3 text-lg ">
             Ambil kendali penuh dengan fitur manajemen anggaran yang fleksibel
             dan berbasis data akurat.
           </p>
@@ -47,7 +47,7 @@ export default function OptimizeSection() {
                   <h3 className="text-lg font-semibold ">
                     {item.title}
                   </h3>
-                  <p className="text-lg text-[#1C0606]/60 leading-relaxed">
+                  <p className="text-lg leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
