@@ -24,7 +24,7 @@ export default function AboutFutureSection() {
                 alt="future vision"
                 width={420}
                 height={320}
-                className="w-full max-w-48 md:max-w-72 lg:max-w-sm h-auto object-contain"
+                className="w-full max-w-44 md:max-w-64 lg:max-w-sm h-auto object-contain"
               />
             </div>
           </div>

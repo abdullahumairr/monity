@@ -28,11 +28,11 @@ export default function Footer() {
           />
         </div>
 
-        <h2 className="mb-4 text-4xl font-bold tracking-tight text-[#1A1A1A]  sm:text-5xl md:text-6xl">
+        <h1 className="mb-4 text-4xl font-bold tracking-tight text-[#1A1A1A]  sm:text-5xl md:text-6xl">
           Siap Pegang Kendali
           <br />
           Finansial Anda?
-        </h2>
+        </h1>
 
         <p className="mb-8 max-w-xl text-lg leading-relaxed text-[#6B6B6B]">
           Lihat bagaimana Monify mentransformasi cara Anda menabung dan

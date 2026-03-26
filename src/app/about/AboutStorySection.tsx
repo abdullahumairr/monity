@@ -31,11 +31,11 @@ export default function AboutStorySection() {
         </div>
 
         <div className="order-2">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
             Lahir dari Kebutuhan
             <br />
             akan Kejelasan
-          </h2>
+          </h1>
 
           <p className="mt-4 text-lhg text-[#1C0606]/60  leading-relaxed">
             Kami percaya bahwa setiap keputusan finansial dimulai dari pemahaman

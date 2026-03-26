@@ -26,9 +26,9 @@ export default function WhySection() {
     <section className="w-full px-8 ">
       <div className="mx-auto container text-center pt-32 md:pt-36 lg:pt-40">
         
-        <h2 className="text-4xl font-bold text-[#1C0606] sm:text-5xl md:text-6xll">
+        <h1 className="text-4xl font-bold text-[#1C0606] sm:text-5xl md:text-6xll">
           Kenapa Pilih Monify?
-        </h2>
+        </h1>
 
         <p className="mt-3 text-[#1C0606]/60 text-lg">
           Sistem yang dirancang untuk mempermudah hidup, bukan menambah beban pikiran.

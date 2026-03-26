@@ -27,9 +27,9 @@ export default function OptimizeSection() {
     <section className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
       <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
         <div className="order-2 md:order-1">
-          <h2 className="text-4xl font-bold text-[#1C0606]sm:text-5xl md:text-6xl">
+          <h1 className="text-4xl font-bold text-[#1C0606]sm:text-5xl md:text-6xl">
             Kelola & Optimalkan
-          </h2>
+          </h1>
 
           <p className="mt-3 text-lg text-[#1C0606]/60 ">
             Ambil kendali penuh dengan fitur manajemen anggaran yang fleksibel
@@ -74,7 +74,7 @@ export default function OptimizeSection() {
                 alt="money grafik"
                 width={420}
                 height={320}
-                className="w-full max-w-64 sm:max-w-80 md:max-w-lg  h-auto object-contain pt-16"
+                className="w-full max-w-md sm:max-w-lg md:max-w-xl  h-auto object-contain pt-20"
               />
             </div>
           </div>

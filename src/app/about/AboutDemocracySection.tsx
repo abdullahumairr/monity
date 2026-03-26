@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function AboutDemocracySection() {
   return (
-    <section className="w-full px-6 py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
+    <section className="w-full px-8 pt-32 md:pt-36 lg:pt-40">
+      <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
         
         <div className="order-1 flex justify-center md:justify-start">
           <div
@@ -21,25 +21,24 @@ export default function AboutDemocracySection() {
           >
             <div className="absolute inset-0 flex items-center justify-center">
               <Image
-                src="/hero/4.svg"
+                src="/about/4.svg"
                 alt="democracy asset"
                 width={260}
                 height={220}
-                className="w-full max-w-64 sm:max-w-80 md:max-w-lg h-auto object-contain"
+                className="w-full max-w-44 md:max-w-64 lg:max-w-sm h-auto object-contain"
               />
             </div>
           </div>
         </div>
 
-        {/* ── TEXT ── */}
         <div className="order-2">
-          <h2 className="text-2xl font-semibold text-[#1C0606] md:text-4xl leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1C0606]  leading-tight">
             Demokratisasi
             <br />
             Manajemen Aset Digital
-          </h2>
+          </h1>
 
-          <p className="mt-4 text-sm text-[#1C0606]/60 md:text-base max-w-md leading-relaxed">
+          <p className="mt-4 text-sm text-[#1C0606]/60 md:text-base leading-relaxed">
             Melalui penggabungan teknologi cerdas dan desain yang inklusif, misi kami
             adalah menyediakan alat manajemen keuangan tercanggih yang dapat diakses
             oleh siapa saja. Kami berkomitmen untuk menyederhanakan proses menabung,
