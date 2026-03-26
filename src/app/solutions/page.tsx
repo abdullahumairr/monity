@@ -4,6 +4,7 @@ import PageBackground from "@/components/layout/PageBackground";
 import SolutionAutomationSection from "./SolutionAutomationSection";
 import SolutionVisualizationSection from "./SolutionVisualizationSection";
 import SolutionsHero from "./hero";
+import SolutionForecastSection from "./SolutionForecastSection";
 
 export default function SolutionsPage() {
   return (
@@ -12,6 +13,7 @@ export default function SolutionsPage() {
       <SolutionsHero />
       <SolutionAutomationSection />
       <SolutionVisualizationSection />
+      <SolutionForecastSection />
       <Footer />
     </PageBackground>
   );
