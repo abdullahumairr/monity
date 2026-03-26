@@ -29,18 +29,20 @@ export default function MonitorSection() {
         <div className="relative flex justify-center">
           <div
             className="
-      w-full max-w-185
-      aspect-740/481
-      md:h-120.25 md:aspect-auto
-      rounded-2xl bg-[#ede7e39f]  
-      shadow-sm
+       relative
+              w-full max-w-185
+              aspect-740/481
+              md:h-110.25 md:aspect-auto
+              lg:h-120.25 lg:aspect-auto
+              rounded-2xl bg-[#ede7e39f] 
+              shadow-sm 
     "
           >
             <Image
               src="/home/monitor/money-hand.png"
               alt="money hand"
               fill
-              className="object-contain object-bottom max-w-[256px] sm:max-w-lg mx-auto pr-4 sm:pr-14"
+              className="object-contain object-bottom max-w-64 sm:max-w-80 md:max-w-lg  h-auto mx-auto pr-4 sm:pr-14"
             />
           </div>
         </div>

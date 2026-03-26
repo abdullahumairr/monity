@@ -62,9 +62,9 @@ export default function OptimizeSection() {
               relative
               w-full max-w-185
               aspect-740/481
-              md:h-120.25 md:aspect-auto
+              md:h-110.25 md:aspect-auto
+              lg:h-120.25 lg:aspect-auto
               rounded-2xl bg-[#ede7e39f] 
-              p-4 sm:p-5 md:p-6 lg:p-8
               shadow-sm
             "
           >
@@ -74,7 +74,7 @@ export default function OptimizeSection() {
                 alt="money grafik"
                 width={420}
                 height={320}
-                className="w-full max-w-105 h-auto object-contain pt-16"
+                className="w-full max-w-64 sm:max-w-80 md:max-w-lg  h-auto object-contain pt-16"
               />
             </div>
           </div>

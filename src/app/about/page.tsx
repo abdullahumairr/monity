@@ -3,6 +3,8 @@ import Navbar from "@/components/layout/Navbar";
 import PageBackground from "@/components/layout/PageBackground";
 import HeroAbout from "./hero";
 import StatsSection from "./StatsSection";
+import AboutStorySection from "./AboutStorySection";
+import AboutFutureSection from "./AboutFutureSection";
 
 export default function AboutPage() {
   return (
@@ -10,6 +12,8 @@ export default function AboutPage() {
       <Navbar />
       <HeroAbout />
       <StatsSection />
+      <AboutStorySection />
+      <AboutFutureSection />  
       <Footer />
     </PageBackground>
   );

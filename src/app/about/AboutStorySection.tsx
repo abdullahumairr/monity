@@ -4,49 +4,45 @@ import Image from "next/image";
 
 export default function AboutStorySection() {
   return (
-    <section className="w-full px-6 py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
-        
-        {/* ── IMAGE ── */}
+    <section className="w-full px-8 pt-40  md:pt-48 lg:pt-52 ">
+      <div className="mx-auto grid container items-center gap-10 md:grid-cols-2">
         <div className="order-1 flex justify-center md:justify-start">
           <div
             className="
-              relative
-              w-full max-w-[520px]
-              aspect-[16/10]
-              md:h-[320px] md:aspect-auto
-              rounded-2xl
-              bg-[#EDE7E3]
-              p-4
+             relative
+              w-full max-w-185
+              aspect-740/481
+              md:h-110.25 md:aspect-auto
+              lg:h-120.25 lg:aspect-auto
+              rounded-2xl bg-[#ede7e39f] 
               shadow-sm
             "
           >
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center mx-0 md:mx-4 lg:mx-4">
               <Image
-                src="/about/2.png"
+                src="/about/2.svg"
                 alt="about story"
-                width={320}
-                height={240}
-                className="w-full max-w-[320px] h-auto object-contain"
+                width={420}
+                height={320}
+                className="w-full max-w-64 sm:max-w-80 md:max-w-lg  h-auto object-contain"
               />
             </div>
           </div>
         </div>
 
         <div className="order-2">
-          <h2 className="text-2xl font-semibold text-[#1C0606] md:text-4xl leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
             Lahir dari Kebutuhan
             <br />
             akan Kejelasan
           </h2>
 
-          <p className="mt-4 text-sm text-[#1C0606]/60 md:text-base max-w-md leading-relaxed">
+          <p className="mt-4 text-lhg text-[#1C0606]/60  leading-relaxed">
             Kami percaya bahwa setiap keputusan finansial dimulai dari pemahaman
             yang baik. Monify diciptakan untuk menyederhanakan kompleksitas dan
             memberikan transparansi penuh atas setiap arus uang Anda.
           </p>
         </div>
-
       </div>
     </section>
   );
